@@ -17,7 +17,6 @@ function getIngredients(meal) {
 
 function updatePage(data) {
   const meal = data.meals[0];
-  console.log(meal)
   
   videolink = meal.strYoutube.replace("watch?v=","embed/");
   let mealHTML = document.querySelector(".js-meal-grid");
@@ -26,15 +25,15 @@ function updatePage(data) {
   <img src='${meal.strMealThumb}' style='height: 400px;'>
   <p><span style='font-weight: bold;'>Category:</span> ${meal.strCategory}</p>
   <p><span style="font-weight: bold;">Area:</span> ${meal.strArea}</p>
-  <p><span style="font-weight: bold;">Tags:</span> ${meal.strTags ? meal.strTags : ""}</p>
+  <p>${meal.strTags ?  `<span style="font-weight: bold;">Tags:</span> ${meal.strTags}` : ""}</p>
   <p style="font-size: 32px;">Ingredients:</p>
   <div style="padding-left: 12px;">
     ${getIngredients(meal)}
-    <p style="font-size: 32px;">Video Recipe</p>
   </div>
+  <p style="font-size: 32px;">Video Recipe</p>
 </div>
 <div>
-  <p style="font-weight: 500;font-size: 36px;">Ma Po Tofu</p>
+  <p style="font-weight: 500;font-size: 36px;">${meal.strMeal}</p>
   <p>${meal.strInstructions}</p>
 </div>
 <div>
