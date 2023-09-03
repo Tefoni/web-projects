@@ -1,0 +1,31 @@
+.main-page{
+  display: grid;
+  place-items: center;
+}
+
+body
+{
+  margin-top: 100px;
+}
+p{
+  font-family: Arial;
+  margin: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.meal-button{
+  background-color: #33C3F0;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.meal-grid {
+  padding: 2% 30%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px; /* Gap between grid items */
+}
