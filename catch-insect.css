@@ -1,0 +1,33 @@
+@font-face { font-family: PressStart2P; src: url('PressStart2P-Regular.ttf'); } 
+
+.game-texts{
+  font-weight: bold;
+  color: white;
+  font-family: PressStart2P;
+}
+
+.play-game-button{
+  color: #516dff;
+  background-color: white;
+  border: none;
+  font-family: PressStart2P;;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.insect-button{
+  background-color: #516dff;
+  border-color: white;
+  height: 175px;
+  width: 175px;
+  margin-right: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: PressStart2P;
+}
+
+.insect-button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #516dff;
+}
